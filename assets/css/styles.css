@@ -1,0 +1,49 @@
+/* chose colors by using: https://coolors.co/ */
+/* scheme chosen: https://coolors.co/a4036f-048ba8-16db93-efea5a-f29e4c */
+
+/* start defining the colors here to act as consts then assgin them to variables*/
+/* mainly here for readability */
+:root {
+  --flirt: #a4036f;
+  --primary-background: var(--flirt);
+
+  --blue-munsell: #048ba8;
+  --font-color: var(--blue-munsell);
+
+  /* for links */
+  --medium-aquamarine: #16db93;
+  --secondary-font-color: var(--medium-aquamarine);
+
+  --corn: #efea5a;
+  --card-background: var(--corn);
+
+  --sandy-brown: #f29e4c;
+  --highlight-color: var(--sandy-brown);
+}
+
+body {
+  background-color: var(--primary-background);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--secondary-font-color);
+}
+/* What selected text will look like */
+::selection {
+  background-color: var(--highlight-color);
+  color: var(--primary-background);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    code block should use monospace to make it look like it's in a text editor
+    do NOT use monospace on the rest of the page to make it stand out
+*/
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--corn);
+}

@@ -67,12 +67,16 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  justify-content: center;
 }
 
 /* flex column */
 .column {
   display: flex;
   flex-direction: column;
+  padding: 1.5rem;
 }
 
 /* puts a nice outline around things */
@@ -83,20 +87,32 @@ footer {
 
 /* hovering causes GLOWING! */
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
   transition: all 0.5s ease-in-out;
 }
 
 .card:hover,
 .card:hover .card-title {
   box-shadow: inset 0px 0px 8px var(--highlight-color);
+  transition: all 0.5s ease-in-out;
   /* 0 0 15px --var(highlight-color); */
 }
 
 .card-title {
   position: relative;
-  margin-top: -20px;
+  margin: -3rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease-in-out;
+  background: var(--primary-background);
 }
 
+pre {
+  margin-top: 1rem;
+}
 /* 
     code block should use monospace to make it look like it's in a text editor
     do NOT use monospace on the rest of the page to make it stand out

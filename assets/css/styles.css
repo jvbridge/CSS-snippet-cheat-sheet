@@ -40,6 +40,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+header h1 {
+  padding: 1rem 1.2rem;
+  font-size: 2rem auto;
+}
+
+main {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+footer {
+  margin: 1.5 rem;
+  text-align: center;
+}
+
 /* flex row! */
 .row {
   display: flex;
@@ -69,6 +91,12 @@ body {
   box-shadow: inset 0px 0px 8px var(--highlight-color);
   /* 0 0 15px --var(highlight-color); */
 }
+
+.card-title {
+  position: relative;
+  margin-top: -20px;
+}
+
 /* 
     code block should use monospace to make it look like it's in a text editor
     do NOT use monospace on the rest of the page to make it stand out

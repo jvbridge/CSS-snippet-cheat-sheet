@@ -113,6 +113,7 @@ footer {
 pre {
   margin-top: 1rem;
 }
+
 /* 
     code block should use monospace to make it look like it's in a text editor
     do NOT use monospace on the rest of the page to make it stand out
@@ -120,4 +121,9 @@ pre {
 .code-sample {
   font-family: "Courier New", Courier, monospace;
   background-color: var(--corn);
+}
+
+/* make the user select all the code */
+.card pre:active {
+  user-select: all;
 }

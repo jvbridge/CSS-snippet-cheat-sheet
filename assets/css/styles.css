@@ -5,19 +5,18 @@
 /* mainly here for readability */
 :root {
   --flirt: #a4036f;
-  --primary-background: var(--flirt);
-
   --blue-munsell: #048ba8;
-  --font-color: var(--blue-munsell);
+  --medium-aquamarine: #16db93;
+  --corn: #efea5a;
+  --sandy-brown: #f29e4c;
+
+  --primary-background: var(--blue-munsell);
+  --font-color: var(--flirt);
 
   /* for links */
-  --medium-aquamarine: #16db93;
   --secondary-font-color: var(--medium-aquamarine);
 
-  --corn: #efea5a;
   --card-background: var(--corn);
-
-  --sandy-brown: #f29e4c;
   --highlight-color: var(--sandy-brown);
 }
 
@@ -39,11 +38,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.outline {
+  outline: 2px solid var(--highlight-color);
+  border-radius: 8px;
+}
+
 /* 
     code block should use monospace to make it look like it's in a text editor
     do NOT use monospace on the rest of the page to make it stand out
 */
-code {
+.code-sample {
   font-family: "Courier New", Courier, monospace;
   background-color: var(--corn);
 }

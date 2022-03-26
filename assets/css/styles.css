@@ -25,6 +25,7 @@ body {
   color: var(--font-color);
 }
 
+/* links! */
 a {
   color: var(--secondary-font-color);
 }
@@ -34,10 +35,25 @@ a {
   color: var(--primary-background);
 }
 
+/* Making sure our font looks good */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* flex row! */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* flex column */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* puts a nice outline around things */
 .outline {
   outline: 2px solid var(--highlight-color);
   border-radius: 8px;

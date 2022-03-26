@@ -17,12 +17,11 @@
     </header>
 
     <main>
-      <section class="row justify-center">
+      <section class="row">
         <!-- first card -->
         <div class="column">
           <figure class="card outline">
             <h2 class="card-title">Flexbox Row</h2>
-            <h2 class="card-title outline">This is a Card's title</h2>
             <div class="card-body">
               <p>Use these three properties to create a Flexbox row layout.</p>
             </div>
@@ -38,7 +37,6 @@
         <div class="column">
           <figure class="card outline">
             <h2 class="card-title">Flexbox Column</h2>
-            <h2 class="card-title outline">This is a Card's title</h2>
             <div class="card-body">
               <p>Use this to create a Flexbox column layout.</p>
             </div>
@@ -53,7 +51,6 @@
         <div class="column">
           <figure class="card outline">
             <h2 class="card-title">CSS Grid Layout</h2>
-            <h2 class="card-title outline">This is a Card's title</h2>
             <div class="card-body">
               <p>Build a 12-column layout using CSS Grid</p>
             </div>
@@ -85,7 +82,28 @@
             <div class="card-body">
               <p>Use transition and box shadows to glow on hover.</p>
             </div>
-            <pre class="code-sample outline"><code>.code-</code></pre>
+            <pre class="code-sample outline"><code>.card-outline .card-title {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-outline:hover,
+.card-outline:hover .card-title {
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}</code></pre>
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="card outline">
+            <h2 class="card-title">Overlay Card with Title</h2>
+            <div class="card-body">
+              <p>Use position properties and negative margins to raise elements higher than their natural starting point.
+              </p>
+            </div>
+            <pre class="code-sample outline"><code>.card-title {
+  position: relative;
+  margin-top: -20px;
+}</code></pre>
           </figure>
         </div>
       </section>

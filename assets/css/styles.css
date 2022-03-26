@@ -59,6 +59,16 @@ body {
   border-radius: 8px;
 }
 
+/* hovering causes GLOWING! */
+.card {
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover .card-title {
+  box-shadow: inset 0px 0px 8px var(--highlight-color);
+  /* 0 0 15px --var(highlight-color); */
+}
 /* 
     code block should use monospace to make it look like it's in a text editor
     do NOT use monospace on the rest of the page to make it stand out
